@@ -3,7 +3,8 @@ package boot.mapper;
 import boot.bean.Student;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Component;
+
+import java.util.Map;
 
 /**
  * @author LiGuanda
@@ -16,7 +17,8 @@ import org.springframework.stereotype.Component;
 public interface StudentMapper extends BaseMapper<Student> {
 
 
-
+    @SuppressWarnings("MybatisXMapperMethodInspection")
+    Map<Object, Object> selectMapById(int id);
 
 
 }

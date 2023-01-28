@@ -1,6 +1,10 @@
 package boot.bean;
 
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
+
 /**
  * @author LiGuanda
  * @date 2023/1/19 上午 10:07:13
@@ -8,9 +12,11 @@ package boot.bean;
  * @filename Student.java
  */
 
+@TableName("student")
 public class Student {
 
 
+    @TableId(value = "id",type = IdType.AUTO)
     private int id;
     private String name;
     private String occupation;

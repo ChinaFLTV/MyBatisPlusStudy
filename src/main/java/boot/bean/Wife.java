@@ -1,11 +1,5 @@
 package boot.bean;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
-
 /**
  * @author LiGuanda
  * @date 2023/1/8 上午 10:24:42
